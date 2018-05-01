@@ -473,6 +473,9 @@
     .bottom-header .owl-theme .owl-dots{
         margin-top: -6%;
     }
+    .bottom-header .owl-carousel.owl-loaded{
+        margin-top: 10px;
+    }
 }
 
 /* global */
