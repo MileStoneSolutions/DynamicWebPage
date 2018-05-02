@@ -97,7 +97,7 @@
  }
 @media screen and (max-width: 576px){
     .top-header-logo{
-        padding: 0px!important;
+/*         padding: 0px!important; */
     }
     .top-header-logo p{
         padding-top: 7%;
