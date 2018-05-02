@@ -2408,18 +2408,23 @@
 </script>
 <!-- for top-header in tablet, mobile view -->
 <script>
-$(window).on('resize', function() {
-  if($(window).width() < 768) {
-      $('#top-header-login').addClass('order-1');
-      $('#top-header-cart').addClass('order-2');
-      $('#top-header-search').addClass('order-3');
+var alignTopHeader = function(){
+        if($(window).width() < 768) {
+          $(function(){
+              $('#top-header-login').addClass('order-1');
+              $('#top-header-cart').addClass('order-2');
+              $('#top-header-search').addClass('order-3');
+          });
+        }
+        else{
+          $(function(){
+              $('#top-header-login').removeClass('order-1');
+              $('#top-header-cart').removeClass('order-2');
+              $('#top-header-search').removeClass('order-3');
+          });
+        }
   }
-  else{
-    $('#top-header-login').removeClass('order-1');
-    $('#top-header-cart').removeClass('order-2');
-    $('#top-header-search').removeClass('order-3');
-  }
-});
+  $(document).ready(alignTopHeader);
 </script>
 <!-- owl carousel -->
 <script src="OwlCarousel2-2.3.4/docs_src/jquery.min.js"></script>
