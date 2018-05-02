@@ -376,7 +376,7 @@
 /* global */
 .bottom-header{
     font-family: 'Tajawal', sans-serif;
-    height: 220px;
+    height: auto;
     z-index: 5; 
     padding-top: 90px;
     position: static!important;
@@ -447,7 +447,7 @@
 }
 @media screen and (min-width: 576px) and (max-width: 767px){
     .bottom-header{
-        padding-top: 80px;
+        padding-top: 130px;
     }
     .bottom-header .owl-theme .owl-dots{
         margin-top: -2.9%;
@@ -459,8 +459,8 @@
 }
 @media screen and (max-width: 576px){
     .bottom-header{
-        height: 230px;
-        padding-top: 100px;
+        height: auto;
+        padding-top: 120px;
     }
     .bottom-header .owl-theme .owl-dots{
         margin-top: -5%;
@@ -476,7 +476,7 @@
 }
 @media screen and (max-width: 470px){
     .bottom-header{
-        height: 230px;
+        height: auto;
         padding-top: 100px;
     }
     .bottom-header .owl-theme .owl-dots{
